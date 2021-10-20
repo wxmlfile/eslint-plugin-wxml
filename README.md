@@ -4,10 +4,84 @@
 </div>
 
 [![npm version](https://img.shields.io/npm/v/eslint-plugin-wxml)](https://www.npmjs.com/package/eslint-plugin-wxml)
-[![CI Status](https://github.com/wxmlfile/eslint-plugin-wxml/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/wxmlfile/eslint-plugin-wxml/actions/workflows/ci.yml?query=branch%3Amain)
+[![CI](https://github.com/wxmlfile/eslint-plugin-wxml/actions/workflows/ci.yml/badge.svg)](https://github.com/wxmlfile/eslint-plugin-wxml/actions/workflows/ci.yml)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/wxmlfile/eslint-plugin-wxml/pulls)
 [![Twitter Follow Author](https://img.shields.io/twitter/follow/s_chenlei)](https://twitter.com/s_chenlei)
 
 ### A [ESLint](https://eslint.org) plugin to lint [wxml](https://developers.weixin.qq.com/miniprogram/dev/reference/wxml) files.
 
+## Installation
+
+```bash
+$ npm install eslint-plugin-wxml --save-dev
+```
+
+## Basic Usage
+
+### change your eslintrc config
+
+> .eslintrc .eslintrc.yml .eslinrc.json .eslintrc.js
+
+```diff
++  "overrides": [
++    {
++      "files": ["*.wxml"],
++      "rules": {
++        "wxml/rules-id": "error"
++      },
++      "plugins": ["wxml"],
++      "processor": "wxml/wxml",
++      "parser": "@wxml/parser"
++    }
++  ],
+```
+
+## Editor integrations
+
+### Visual Studio Code
+
+Use the [dbaeumer.vscode-eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) extension that Microsoft provides officially.
+
+You have to configure the `eslint.validate` option of the extension to check `.wxml` files, because the extension targets only `*.js` or `*.jsx` files by default.
+
+Example **.vscode/settings.json**:
+
+```json
+{
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "wxml"
+  ]
+}
+```
+
+### Sublime Text
+
+Use Package Control to install **SublimeLinter** and its ESLint extension **[SublimeLinter-eslint](https://github.com/SublimeLinter/SublimeLinter-eslint)**.
+
+In the menu go to `Preferences > Package Settings > SublimeLinter > Settings` and paste in this:
+
+```json
+{
+  "linters": {
+    "eslint": {
+      "selector": "text.html.wxml, source.js - meta.attribute-with-value"
+    }
+  }
+}
+```
+
+### Atom editor
+
+Go into `Settings -> Packages -> linter-eslint`, under the option "List of scopes to run eslint on", add `text.html.wxml`. You may need to restart Atom.
+
+### IntelliJ IDEA / JetBrains WebStorm
+
+In the **Settings/Preferences** dialog (`Cmd+,`/`Ctrl+Alt+S`), choose JavaScript under **Languages and Frameworks** and then choose **ESLint** under **Code Quality Tools**.
+On the **ESLint page** that opens, select the *Enable* checkbox.
+
+If your ESLint configuration is updated (manually or from your version control), open it in the editor and choose **Apply ESLint Code Style Rules** in the context menu.
+
+read more: [JetBrains - ESLint](https://www.jetbrains.com/help/idea/eslint.html)
