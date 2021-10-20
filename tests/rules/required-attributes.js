@@ -18,6 +18,10 @@ tester.run("required-attributes", rule, {
           tag: "popup",
           attrs: [{ key: "wx:if", value: "{{$popupVisiable}}" }],
         },
+        {
+          tag: "modal",
+          attrs: ["showMask"],
+        },
       ],
     },
   ],
@@ -51,7 +55,7 @@ tester.run("required-attributes", rule, {
       ],
     },
     {
-      code: `<mall a b="config" c="entry" b="trouble" />`,
+      code: `<mall a b="config" c="entry" b="trouble" /> <modal />`,
       options: [
         {
           tag: "mall",
@@ -61,6 +65,10 @@ tester.run("required-attributes", rule, {
             { key: "b", value: "config" },
           ],
         },
+        {
+          tag: "modal",
+          attrs: ["showMask"],
+        },
       ],
       errors: [
         {
@@ -68,6 +76,13 @@ tester.run("required-attributes", rule, {
           data: {
             tag: "mall",
             attrs: '"d","a=you"',
+          },
+        },
+        {
+          messageId: "missingAttributes",
+          data: {
+            tag: "modal",
+            attrs: '"showMask"',
           },
         },
       ],

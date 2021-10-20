@@ -9,4 +9,6 @@ tests
 .eslintignore
 .eslintrc.js
 .gitignore
+package-lock.json
 CODE_OF_CONDUCT.md
+CHANGELOG.md
