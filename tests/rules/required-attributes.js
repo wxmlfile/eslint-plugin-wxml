@@ -1,0 +1,76 @@
+const RuleTester = require("eslint").RuleTester;
+const rule = require("../../lib/rules/required-attributes");
+
+const tester = new RuleTester({
+  parser: require.resolve("@wxml/parser"),
+});
+
+tester.run("required-attributes", rule, {
+  valid: [
+    {
+      code: `<img width="200px" src="show.png" />`,
+      options: [{ tag: "img", attrs: ["width"] }],
+    },
+    {
+      code: `<popup wx:if="{{$popupVisiable}}" useAnime />`,
+      options: [
+        {
+          tag: "popup",
+          attrs: [{ key: "wx:if", value: "{{$popupVisiable}}" }],
+        },
+      ],
+    },
+  ],
+  invalid: [
+    {
+      code: "<popup />",
+      options: [{ tag: "popup", attrs: ["name"] }],
+      errors: [
+        {
+          messageId: "missingAttributes",
+          data: { tag: "popup", attrs: '"name"' },
+        },
+      ],
+    },
+    {
+      code: "<popup />",
+      options: [
+        {
+          tag: "popup",
+          attrs: ["name", { key: "wx:if", value: "{{$popupVisiable}}" }],
+        },
+      ],
+      errors: [
+        {
+          messageId: "missingAttributes",
+          data: {
+            tag: "popup",
+            attrs: '"name","wx:if=\'{{$popupVisiable}}\'"',
+          },
+        },
+      ],
+    },
+    {
+      code: `<mall a b="config" c="entry" b="trouble" />`,
+      options: [
+        {
+          tag: "mall",
+          attrs: [
+            "d",
+            { key: "a", value: "you" },
+            { key: "b", value: "config" },
+          ],
+        },
+      ],
+      errors: [
+        {
+          messageId: "missingAttributes",
+          data: {
+            tag: "mall",
+            attrs: '"d","a=you"',
+          },
+        },
+      ],
+    },
+  ],
+});

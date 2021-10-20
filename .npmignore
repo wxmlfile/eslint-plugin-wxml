@@ -1,0 +1,12 @@
+.github/
+.idea/
+.vscode/
+
+docs
+tests
+
+.editorconfig
+.eslintignore
+.eslintrc.js
+.gitignore
+CODE_OF_CONDUCT.md
