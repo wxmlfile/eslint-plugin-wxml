@@ -43,6 +43,7 @@ module.exports = {
     }
   },
 
+  dest: 'public',
   themeConfig: {
     repo: 'wxmlfile/eslint-plugin-wxml',
     docsRepo: 'wxmlfile/eslint-plugin-wxml',
