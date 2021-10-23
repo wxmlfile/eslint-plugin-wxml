@@ -42,5 +42,7 @@ jobs:
      - name: Print put node & npm version
        # Output useful info for debugging.
        run: node --version && npm --version 
+     - name: ESlint Lint
+       run: npm run lint
      - name: Run Test
        run: npm run test
