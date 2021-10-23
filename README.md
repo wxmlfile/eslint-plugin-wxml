@@ -17,10 +17,15 @@
 ```bash
 ## npm
 $ npm install eslint-plugin-wxml --save-dev
-## yarn
-$ yarn add eslint-plugin-wxml --dev
+
 ## cnpm (for china user)
 $ cnpm install eslint-plugin-wxml --save-dev
+
+## pnpm
+$ pnpm add eslint-plugin-wxml -D
+
+## yarn
+$ yarn add eslint-plugin-wxml -D
 ```
 
 ## Basic Usage
@@ -42,52 +47,12 @@ $ cnpm install eslint-plugin-wxml --save-dev
 +    }
 +  ],
 ```
+## Documentation
 
-## Editor integrations
+See [the official website](https://eslint-plugin-wxml.vercel.app/)
 
-### Visual Studio Code
+## License
 
-Use the [dbaeumer.vscode-eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) extension that Microsoft provides officially.
+[MIT](https://opensource.org/licenses/MIT)
 
-You have to configure the `eslint.validate` option of the extension to check `.wxml` files, because the extension targets only `*.js` or `*.jsx` files by default.
-
-Example **.vscode/settings.json**:
-
-```json
-{
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "wxml"
-  ]
-}
-```
-
-### Sublime Text
-
-Use Package Control to install **SublimeLinter** and its ESLint extension **[SublimeLinter-eslint](https://github.com/SublimeLinter/SublimeLinter-eslint)**.
-
-In the menu go to `Preferences > Package Settings > SublimeLinter > Settings` and paste in this:
-
-```json
-{
-  "linters": {
-    "eslint": {
-      "selector": "text.html.wxml, source.js - meta.attribute-with-value"
-    }
-  }
-}
-```
-
-### Atom editor
-
-Go into `Settings -> Packages -> linter-eslint`, under the option "List of scopes to run eslint on", add `text.html.wxml`. You may need to restart Atom.
-
-### IntelliJ IDEA / JetBrains WebStorm
-
-In the **Settings/Preferences** dialog (`Cmd+,`/`Ctrl+Alt+S`), choose JavaScript under **Languages and Frameworks** and then choose **ESLint** under **Code Quality Tools**.
-On the **ESLint page** that opens, select the *Enable* checkbox.
-
-If your ESLint configuration is updated (manually or from your version control), open it in the editor and choose **Apply ESLint Code Style Rules** in the context menu.
-
-read more: [JetBrains - ESLint](https://www.jetbrains.com/help/idea/eslint.html)
+Copyright (c) 2021-present, Lei Chen
