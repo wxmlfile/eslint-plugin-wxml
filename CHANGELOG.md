@@ -6,8 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.2.0] - 2021-10-23
+## [0.2.1] - 2021-10-24
 ### Changed
+- rename rule `empty-tag-must-be-self-closing` to `empty-tag-self-closing`
+
+## [0.2.0] - 2021-10-23
+### Added
 - add rule `no-inline-wxs`
 - add rule `wxs-must-be-top-level`
 - add rule `quotes`
