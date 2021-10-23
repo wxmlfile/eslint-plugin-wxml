@@ -20,7 +20,7 @@
   "scripts": {
     "lint": "npx eslint .",
     "prepublish": "npm run format && npm run test",
-    "format": "prettier  \"./lib\" \"./tests\" --write ",
+    "format": "prettier  \"./lib\" \"./tests\" \"./tools\" --write ",
     "test": "mocha \"tests/**/*.js\" --reporter dot"
   },
   "peerDependencies": {

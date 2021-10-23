@@ -2,7 +2,9 @@
 .idea/
 .vscode/
 
+website
 docs
+tools
 tests
 
 .editorconfig
