@@ -56,7 +56,7 @@ You can edit code via online editor, it's online REPL, try to fix eslint problem
 "wxml/max-depth": [<enabled>, number]
 ```
 
-### onfig example
+### Config example
 
 ```json
 { "wxml/max-depth": ["error", 10] }
