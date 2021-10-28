@@ -19,7 +19,7 @@
   ],
   "scripts": {
     "lint": "eslint .",
-    "prepublish": "npm run format && npm run test",
+    "prepublishOnly": "npm run format && npm run test",
     "format": "prettier  \"./lib\" \"./tests\" \"./tools\" --write ",
     "test": "mocha \"tests/**/*.js\" --reporter dot"
   },

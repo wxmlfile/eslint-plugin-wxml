@@ -2,6 +2,10 @@
   "name": "eslint-plugin-wxml-doc",
   "version": "1.0.0",
   "description": "doc website for eslint-plugin-wxml",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wxmlfile/eslint-plugin-wxml.git"
+  },
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
@@ -13,6 +17,8 @@
   "license": "MIT",
   "devDependencies": {
     "eslint": "^7.32.0",
+    "vue-eslint-editor": "^1.1.0",
+    "@wxml/parser": "^0.2.0",
     "vuepress": "^1.8.2",
     "@vuepress/plugin-pwa": "^1.8.2"
   }

@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: ✨ Feature Request / idea
+    url: https://github.com/wxmlfile/eslint-plugin-wxml/discussions
+    about: Missing something in eslint-plugin-wxml? Let us know.
+  - name: 💬 Question / Discussion
+    url: https://github.com/wxmlfile/eslint-plugin-wxml/discussions
+    about: Feel free to ask anything
+  - name: 📖 View eslint-wxml-plugin documentation
+    url: https://eslint-plugin-wxml.js.org
+    about: Official eslint-plugin-wxml documentation    
+  - name: ❓ Wechat MiniPorgram Question
+    url: https://developers.weixin.qq.com/community/develop/question
+    about: Official Wehcat MiniProgram Question Home Page
