@@ -2,6 +2,10 @@
   "name": "eslint-plugin-wxml-doc",
   "version": "1.0.0",
   "description": "doc website for eslint-plugin-wxml",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wxmlfile/eslint-plugin-wxml.git"
+  },
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
