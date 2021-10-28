@@ -6,6 +6,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.0] - 2021-10-28
+### Added
+- Add rule `colon-style-event-binding`
+- Add rule `max-depth`
+- Add rule `max-len`
+- Add rule `max-lines`
+- Add rule `no-dynamic-wx-key`
+- Add rule `no-unnecessary-block`
+- Add rule `wx-key`
+- Add rule `wxs-module-prop`
+- add `eslint` online repl for documentation
+- replace doc website domain `esint-plugin-wxml.vercel.app` with `esint-plugin-wxml.js.org`
+
 ## [0.2.1] - 2021-10-24
 ### Changed
 - rename rule `empty-tag-must-be-self-closing` to `empty-tag-self-closing`

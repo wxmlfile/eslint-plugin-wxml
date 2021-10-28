@@ -12,6 +12,10 @@
 
 ### A [ESLint](https://eslint.org) plugin to lint [wxml](https://developers.weixin.qq.com/miniprogram/dev/reference/wxml) files.
 
+## Show Case
+
+![vscode eslint-plugin-wxml](https://funimg.pddpic.com/mobile_piggy/3c944e77-0792-4bee-a137-aa6922d94cfb.gif)
+
 ## Installation
 
 ```bash
@@ -47,7 +51,7 @@ $ yarn add eslint-plugin-wxml -D
 +    }
 +  ],
 ```
-## Mssing Rule
+## Missing Rule
 Missing your wanted rule ? please report it as a new [github issue](https://github.com/wxmlfile/eslint-plugin-wxml/issues), thanks !
 
 ## Documentation
