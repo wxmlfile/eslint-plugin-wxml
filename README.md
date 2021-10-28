@@ -12,7 +12,7 @@
 
 ### A [ESLint](https://eslint.org) plugin to lint [wxml](https://developers.weixin.qq.com/miniprogram/dev/reference/wxml) files.
 
-### Show Case
+## Show Case
 
 ![vscode eslint-plugin-wxml](https://funimg.pddpic.com/mobile_piggy/3c944e77-0792-4bee-a137-aa6922d94cfb.gif)
 
