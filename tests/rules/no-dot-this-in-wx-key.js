@@ -20,7 +20,7 @@ tester.run("no-dot-this-in-wx-key", rule, {
     {
       filename: "test.wxml",
       code: `<view wx:for="{{titles}}" wx:key="*this" ></view>`,
-      errors: [`not allow using "*this" as wx:key's value`],
+      errors: [`not allow using "*this" as wx:key value`],
     },
   ],
 });

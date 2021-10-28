@@ -20,7 +20,7 @@ tester.run("no-index-in-wx-key", rule, {
     {
       filename: "test.wxml",
       code: `<view wx:for="{{titles}}" wx:key="index" ></view>`,
-      errors: [`not allow using "index" as wx:key's value`],
+      errors: [`not allow using "index" as wx:key value`],
     },
   ],
 });

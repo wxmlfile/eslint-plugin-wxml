@@ -16,18 +16,26 @@ sidebarDepth: 0
 
 | Rule ID | Description |Recommended| Fixable |
 |:--------|:------------|:---|:---|
+| [wxml/colon-style-event-binding](./colon-style-event-binding.md) | use colon(`:`) style event binding | :star: :star: | |
 | [wxml/empty-tag-self-closing](./empty-tag-self-closing.md) | empty tag must be self closing | :star: :star: :star: | |
 | [wxml/forbid-tags](./forbid-tags.md) | disable using special tag in projet | :star: :star: :star: | |
+| [wxml/max-depth](./max-depth.md) | set maximum wxml tree depth | :star: :star: | |
+| [wxml/max-len](./max-len.md) | set maximum length of single line code | :star: :star: | |
+| [wxml/max-lines](./max-lines.md) | set maximum code lines of `.wxml` file | :star: | |
 | [wxml/no-const-and-let-in-wxs](./no-const-and-let-in-wxs,md) | Wechat Miniprogram [wxs](https://developers.weixin.qq.com/miniprogram/dev/reference/wxs/02variate.html) current [not support use `let` and `const` to declare variable](https://developers.weixin.qq.com/community/develop/doc/0002a0fd3b8ca00ee9d8f13245b400?highLine=wxs%2520let)| :star: :star: :star: | |
 | [wxml/no-dot-this-in-wx-key](./no-dot-this-in-wx-key.md) | disable using [`*this`](https://developers.weixin.qq.com/miniprogram/dev/reference/wxml/list.html) as `wx:key`'s value | :star: | |
 | [wxml/no-duplicate-attributes](./no-duplicate-attributes.md) | not allow exist duplicate attributes in a single tag | :star: :star: | |
+| [wxml/no-dynamic-wx-key](./no-dynamic-wx-key.md) | enforce using static `wx:key` | :star: | |
 | [wxml/no-index-in-wx-key](./no-index-in-wx-key.md) | disable using [`index`](https://developers.weixin.qq.com/miniprogram/dev/reference/wxml/list.html) as `wx:key`'s value | :star: | |
 | [wxml/no-inline-wxs](./no-inline-wxs.md) | force using separate `.wxs` file | :star: | |
 | [wxml/no-unexpected-string-bool](./no-unexpected-string-bool.md) | not allow using `"true"` or `"false"` as attribute's boolean value, [official documentation](https://developers.weixin.qq.com/miniprogram/dev/reference/wxml/data.html) | :star: :star: :star: | |
+| [wxml/no-unnecessary-block](./no-unnecessary-block.md) | optimize unnecessary `<block />` | :star: | |
 | [wxml/no-vue-directive](./no-vue-directive.md) | funny muscle memory to write vuejs directive in miniprogram project (e.g. `v-if`) | :star: | |
 | [wxml/quotes](./quotes.md) | force using same quotes style in project, `'` or `"` | :star: | |
 | [wxml/report-wxml-syntax-error](./report-wxml-syntax-error.md) | check `wxml` syntax error via [`@wxml/parser`](https://github.com/wxmlfile/wxml-parser) | :star: | |
 | [wxml/report-wxs-syntax-error](./report-wxml-syntax-error.md) | check inline `wxs` syntax error via [`@wxml/parser`](https://github.com/wxmlfile/wxml-parser) | :star: | |
 | [wxml/required-attributes](./required-attributes.md) | using custom config to force team member write the required attributes in wxml | :star: :star: | |
+| [wxml/wx-key](./wx-key.md) | hint missing `wx:key` when you use `wx:for` loop | :star: :star: :star: | |
+| [wxml/wxs-module-prop](./wxs-module-prop.md) | lint `wxs`'s `module` property | :star: :star: :star: | |
 | [wxml/wxs-must-be-top-level](./wxs-must-be-top-level.md) | force write top level [`wxs`](https://developers.weixin.qq.com/miniprogram/dev/reference/wxs/01wxs-module.html) | :star: | |
 

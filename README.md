@@ -47,9 +47,12 @@ $ yarn add eslint-plugin-wxml -D
 +    }
 +  ],
 ```
+## Mssing Rule
+Missing your wanted rule ? please report it as a new [github issue](https://github.com/wxmlfile/eslint-plugin-wxml/issues), thanks !
+
 ## Documentation
 
-See [the official website](https://eslint-plugin-wxml.vercel.app/)
+See [the official website](https://eslint-plugin-wxml.js.org/)
 
 ## License
 
