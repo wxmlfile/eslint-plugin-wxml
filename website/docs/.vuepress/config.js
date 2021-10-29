@@ -59,17 +59,19 @@ module.exports = {
     ],
 
     sidebar: {
-      '/rules/': [
-        ['/rules/', 'Summary'],
-
+      '/': [
+        '/',
+        '/user-guide/',
+        [
+          '/rules/',
+          'Rules Summary'
+        ],
         {
           title: 'Rules List',
           collapsable: false,
           children: rulesTree
         }
-      ],
-
-      '/': ['/', '/user-guide/', '/rules/']
+      ]
     },
 
   //  algolia: {

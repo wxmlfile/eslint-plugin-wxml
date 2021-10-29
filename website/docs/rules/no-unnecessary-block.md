@@ -17,7 +17,7 @@ Because wx:if is a control property, you must add it to a tag. To judge multiple
 
 **block wx:for**
 
-Similar to block wx:if, you can use wx:for on a `<block/>` tag to render a structural block containing multiple nodes. For example:
+Similar to block wx:if, you can use wx:for on a `<block/>` tag to render a structural block containing multiple nodes.
 
 [Wechat Document Reference](https://developers.weixin.qq.com/miniprogram/dev/reference/wxml/list.html)
 
