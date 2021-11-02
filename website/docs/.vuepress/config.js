@@ -12,6 +12,26 @@ rules.map(rule => {
 })
 
 module.exports = {
+  head: [
+    [
+      'script',
+      {
+        async: true,
+        src: "https://www.googletagmanager.com/gtag/js?id=G-8VGFV3FXW5"
+      },
+      ''
+    ],
+    [
+      'script',
+      {},
+      `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-8VGFV3FXW5');
+      `
+    ]
+  ],
   configureWebpack(_config, _isServer) {
     return {
       resolve: {
