@@ -18,7 +18,7 @@ tester.run("no-wx-for-with-wx-if", rule, {
     {
       filename: "test.wxml",
       code: `<view wx:if="{{item.show}}" >{{item.name}}</view><goods wx:else />`,
-    }
+    },
   ],
   invalid: [
     {
