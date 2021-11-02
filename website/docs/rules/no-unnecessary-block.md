@@ -7,7 +7,7 @@ title: wxml/no-unnecessary-block
 
 ## Background
 
-::: tip block
+::: tip Block with logic condition
 
 **block wx:if**
 
@@ -54,6 +54,22 @@ optimize code to make sense and reduce code size
 
 :::
 
+::: tip wx:for
+
+But in a special edge case, we allow block only contain a single child element.
+
+```html
+<block wx:if="{{showList}}">
+  <view wx:for="{{list}}"> {{item.name}}</view>
+</block>
+```
+
+Wechat miniprogram official disallow using `wx:for` with `wx:if|wx:elif|wx:else` at same tag, the only solution is use `<block />` to wrap the loop list.
+
+[Wechat Document Reference](https://developers.weixin.qq.com/community/develop/doc/00082a556fcb0810a6b7e2eee5b800)
+
+:::
+
 <eslint-code-block :rules="{'wxml/no-unnecessary-block': ['error']}" >
 
 ```wxml
@@ -64,6 +80,10 @@ optimize code to make sense and reduce code size
   <view>
     <sub-view />
   </view>
+</block>
+<!-- use <block /> to wrap loop list is official recommended -->
+<block wx:if="{{showList}}">
+  <view wx:for="{{list}}"> {{item.name}}</view>
 </block>
 
 <!-- ✗ BAD -->
@@ -93,6 +113,12 @@ No special options, normal config is ok
 ```json
 { "wxml/no-unnecessary-block": "error" }
 ```
+
+## History
+
+| Version | Changes
+|:---|:---|
+| v0.4.0 | allow single child when loop list to avoid this [error](https://developers.weixin.qq.com/community/develop/doc/00082a556fcb0810a6b7e2eee5b800) |
 
 ## Version
 

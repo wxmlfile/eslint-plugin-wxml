@@ -19,6 +19,18 @@ tester.run("no-unnecessary-block", rule, {
       filename: "test.wxml",
       code: `<block> <view /> <popup /> </block>`,
     },
+    {
+      filename: "test.wxml",
+      code: `<block wx:if="{{showV2List}}"> <list wx:for="{{GoodsList}}" /> </block>`,
+    },
+    {
+      filename: "test.wxml",
+      code: `<block wx:elif="{{showV2List}}"> <list wx:for="{{GoodsList}}" /> </block>`,
+    },
+    {
+      filename: "test.wxml",
+      code: `<block wx:else > <list wx:for="{{GoodsList}}" /> </block>`,
+    },
   ],
   invalid: [
     {
@@ -40,6 +52,11 @@ tester.run("no-unnecessary-block", rule, {
           </view>
         </block>
       `,
+      errors: [{ messageId: "unnecessaryWarn" }],
+    },
+    {
+      filename: "test.wxml",
+      code: `<block> <list wx:for="{{GoodsList}}" /> </block>`,
       errors: [{ messageId: "unnecessaryWarn" }],
     },
   ],
