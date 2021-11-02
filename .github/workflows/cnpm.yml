@@ -1,4 +1,4 @@
-name: CI
+name: Sync
 
 # Triggers the workflow on create new tag
 on:
