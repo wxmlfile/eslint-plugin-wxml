@@ -12,4 +12,4 @@ jobs:
 
     steps:
     - name: Use curl to sync cnpm version
-    - run: curl https://npmmirror.com/sync/eslint-plugin-wxml
+      run: curl https://npmmirror.com/sync/eslint-plugin-wxml
