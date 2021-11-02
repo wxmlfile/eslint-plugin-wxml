@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.0] - 2021-11-02
+### Added
+- Add rule `no-wx-for-with-wx-if`
+
+### Fixed
+- Fix rule `no-unnecessary-block` for a edge case
+
 ## [0.3.0] - 2021-10-28
 ### Added
 - Add rule `colon-style-event-binding`
