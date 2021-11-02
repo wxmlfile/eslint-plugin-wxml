@@ -1,0 +1,15 @@
+name: CI
+
+# Triggers the workflow on create new tag
+on:
+  push:
+    tags: ['**']
+
+jobs:
+  sync_cnpm:
+    name: Sync latest version from npm to cnpm
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Use curl to sync cnpm version
+    - run: curl https://npmmirror.com/sync/eslint-plugin-wxml
