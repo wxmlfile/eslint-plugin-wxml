@@ -3,13 +3,15 @@ sidebarDepth: 0
 title: wxml/no-wx-for-with-wx-if
 ---
 
-# wxml/no-wx-for-with-wx-if
+# [Deprecated] wxml/no-wx-for-with-wx-if 
 
 ### Backgroud
 
 ::: danger
 
-You can't use `wx:for` with `wx:if | wx:elif | wx:else` at same tag, it will cause wechat miniprogram compile error like follow :point_down:
+Please use [`wxml/no-wx-for-with-wx-else`](https://eslint-plugin-wxml.js.org/rules/no-wx-for-with-wx-else.html)
+
+~~You can't use `wx:for` with `wx:if | wx:elif | wx:else` at same tag, it will cause wechat miniprogram compile error like follow :point_down:~~
 
 ![error](https://funimg.pddpic.com/mobile_piggy/92b100ee-5ced-4879-bc5d-90101bff1215.jpeg.slim.jpeg)
 
@@ -21,7 +23,7 @@ Releative official community discussion
 
 ## Motivation
 
-Force developer using `wx:for` without `wx:if|wx:elif|wx:else`, that's wrong wxml grammer, so we need avoid the compile error.
+~~Force developer using `wx:for` without `wx:if|wx:elif|wx:else`, that's wrong wxml grammer, so we need avoid the compile error.~~
 
 <eslint-code-block :rules="{'wxml/no-wx-for-with-wx-if': ['error']}" >
 
@@ -54,6 +56,12 @@ No special options, normal config is ok
 ```json
 { "wxml/no-wx-for-with-wx-if": "error" }
 ```
+
+## History
+
+| Version | Changes
+|:---|:---|
+| v0.5.0 | Deprecated |
 
 ## Version
 
