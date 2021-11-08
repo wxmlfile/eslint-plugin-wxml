@@ -118,6 +118,7 @@ No special options, normal config is ok
 
 | Version | Changes
 |:---|:---|
+| v0.5.0 | allow use single `<block />` as non-ui component placeholder |
 | v0.4.0 | allow single child when loop list to avoid this [error](https://developers.weixin.qq.com/community/develop/doc/00082a556fcb0810a6b7e2eee5b800) |
 
 ## Version
