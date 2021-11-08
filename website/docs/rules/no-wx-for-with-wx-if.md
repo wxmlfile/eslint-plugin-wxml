@@ -9,7 +9,7 @@ title: wxml/no-wx-for-with-wx-if
 
 ::: danger
 
-Please use [`wxml/no-wx-for-with-wx-else`](https://eslint-plugin-wxml.js.org/rules/no-wx-for-with-wx-else.html)
+Please use [`wxml/no-wx-for-with-wx-else`](https://eslint-plugin-wxml.js.org/rules/no-wx-for-with-wx-else.html) instead.
 
 ~~You can't use `wx:for` with `wx:if | wx:elif | wx:else` at same tag, it will cause wechat miniprogram compile error like follow :point_down:~~
 
