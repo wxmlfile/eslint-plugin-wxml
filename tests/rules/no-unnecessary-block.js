@@ -13,6 +13,14 @@ tester.run("no-unnecessary-block", rule, {
     },
     {
       filename: "test.wxml",
+      code: `<block />`,
+    },
+    {
+      filename: "test.wxml",
+      code: `<block></block>`,
+    },
+    {
+      filename: "test.wxml",
       code: `<block> {{show}} </block>`,
     },
     {
@@ -36,6 +44,11 @@ tester.run("no-unnecessary-block", rule, {
     {
       filename: "test.wxml",
       code: `<block> <view />  </block>`,
+      errors: [{ messageId: "unnecessaryWarn" }],
+    },
+    {
+      filename: "test.wxml",
+      code: `<block /> <view />`,
       errors: [{ messageId: "unnecessaryWarn" }],
     },
     {
