@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.0] - 2021-11-15
+### Fixed
+- Bump `@wxml/parser` version to fix rule `report-wxml-syntax-error`
+
 ## [0.5.0] - 2021-11-08
 ### Changed
 - Improve rule `no-unnecessary-block`

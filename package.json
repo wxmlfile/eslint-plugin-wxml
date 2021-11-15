@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-wxml",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "eslint plugin for wxml",
   "main": "lib/index.js",
   "type": "commonjs",
