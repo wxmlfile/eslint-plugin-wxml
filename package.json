@@ -34,6 +34,6 @@
     "prettier": "^2.4.1"
   },
   "dependencies": {
-    "@wxml/parser": "^0.2.0"
+    "@wxml/parser": "^0.3.0"
   }
 }
