@@ -17,6 +17,16 @@ tester.run("report-wxml-syntax-error", rule, {
     },
     {
       filename: "wxml.wxml",
+      code: `
+<view>
+  {{ OPTIONAL.default === type
+      ? "xiaomi"
+      : "meizu" }}
+</view>
+      `,
+    },
+    {
+      filename: "wxml.wxml",
       code: `<wxs module="utils" ></wxs>`,
     },
     {
