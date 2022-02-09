@@ -8,7 +8,7 @@ const tester = new RuleTester({
 tester.run("required-root-tag", rule, {
   valid: [
     {
-      code: `<page><mall /></page>`,
+      code: ` <page><mall /></page> `,
       options: ["page"],
     },
     {
@@ -16,9 +16,9 @@ tester.run("required-root-tag", rule, {
       options: [""],
     },
     {
-      code: `<page>
+      code: ` <page>
       aaa
-    </page>`,
+    </page>  `,
       options: ["page"],
     },
   ],
