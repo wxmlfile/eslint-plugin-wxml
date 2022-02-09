@@ -65,7 +65,7 @@ You can edit code via online editor, it's online REPL, try to fix eslint problem
       "processor": "wxml/wxml",
       "parser": "@wxml/parser",
       "rule": {
-        "wxml/required": ["error", "page"]
+        "wxml/required-tags": ["error", "page"]
       }
     }
   ]
