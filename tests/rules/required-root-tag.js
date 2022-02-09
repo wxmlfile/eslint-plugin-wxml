@@ -15,6 +15,12 @@ tester.run("required-root-tag", rule, {
       code: `<page><mall /></page>`,
       options: [""],
     },
+    {
+      code: `<page>
+      aaa
+    </page>`,
+      options: ["page"],
+    },
   ],
   invalid: [
     {
