@@ -38,7 +38,7 @@ sidebarDepth: 0
 | [wxml/report-wxml-syntax-error](./report-wxml-syntax-error.md) | check `wxml` syntax error via [`@wxml/parser`](https://github.com/wxmlfile/wxml-parser) | :star: | |
 | [wxml/report-wxs-syntax-error](./report-wxml-syntax-error.md) | check inline `wxs` syntax error via [`@wxml/parser`](https://github.com/wxmlfile/wxml-parser) | :star: | |
 | [wxml/required-attributes](./required-attributes.md) | using custom config to force team member write the required attributes in wxml | :star: :star: | |
-| [wxml/required-tags](./tags.md) | Hint required tags for wxml file, sometimes we need special tags for some reason. | :star: | |
+| [wxml/required-tags](./required-tags.md) | Hint required tags for wxml file, sometimes we need special tags for some reason. | :star: | |
 | [wxml/wx-key](./wx-key.md) | hint missing `wx:key` when you use `wx:for` loop | :star: :star: :star: | |
 | [wxml/wxs-module-prop](./wxs-module-prop.md) | lint `wxs`'s `module` property | :star: :star: :star: | |
 | [wxml/wxs-must-be-top-level](./wxs-must-be-top-level.md) | force write top level [`wxs`](https://developers.weixin.qq.com/miniprogram/dev/reference/wxs/01wxs-module.html) | :star: | |
