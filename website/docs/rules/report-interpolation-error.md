@@ -7,22 +7,22 @@ title: wxml/report-interpolation-error
 
 ### Backgroud
 
-::: tip {{}} interpoation
+::: tip {{}} interpolation
 
-> https://developers.weixin.qq.com/miniprogram/dev/reference/wxml/data.html
+> Mustache style [interpolation]([https://developers.weixin.qq.com/miniprogram/dev/reference/wxml/data.html]) in wxml
 
-`eslint-plugin-wxml` using `@wxml/parser` as parser to parse interpoation content, it provide `interpoation` syntax error message. If you think this rules contain `bug`, please report it by [github issue](https://github.com/wxmlfile/eslint-plugin-wxml/issues).
+`eslint-plugin-wxml` using `@wxml/parser` as parser to parse interpolation content, it provide `interpolation` syntax error message. If you think this rules contain `bug`, please report it by [github issue](https://github.com/wxmlfile/eslint-plugin-wxml/issues).
 
 :::
 
 ## Motivation
 
-hint interpoation syntax error in development time, save developer's time.
+hint interpolation syntax error in development time, save developer's time.
 
 <eslint-code-block :rules="{'wxml/report-interpolation-error': ['error']}" >
 ```wxml
 <view>
-  <view />
+  <view style="idx-{{isOdd ? 'single'}}" />
   {{ a + }}
 </view>
 ```
