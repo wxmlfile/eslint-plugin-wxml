@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-<!-- ## [0.7.0] - 2022-03-24 -->
+## [0.7.0] - 2022-03-24
 ### Changed
 - Bump `@wxml/parser` version from `v0.4.0`
 ### Added
