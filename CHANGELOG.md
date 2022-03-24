@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+<!-- ## [0.7.0] - 2022-03-24 -->
+### Changed
+- Bump `@wxml/parser` version from `v0.4.0`
+### Added
+- Add ESLint 8 test suits
+- Add rule `report-interpolation-error`
+
 ## [0.6.3] - 2022-02-09
 ### Added
 - Add rule `required-root-tag`

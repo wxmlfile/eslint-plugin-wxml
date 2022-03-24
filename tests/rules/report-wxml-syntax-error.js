@@ -66,8 +66,7 @@ tester.run("report-wxml-syntax-error", rule, {
         {
           messageId: "wxmlError",
           data: {
-            error:
-              "Expecting token of type --> EOF <-- but found --> 'var data = {}; module.exports = { data: data } ' <--",
+            error: "Expecting token of type --> EOF <-- but found --> '</' <--",
           },
         },
       ],
@@ -80,7 +79,13 @@ tester.run("report-wxml-syntax-error", rule, {
           messageId: "wxmlError",
           data: {
             error:
-              "Expecting token of type --> EOF <-- but found --> '{{ a > ' }} {{}}' <--",
+              "unexpected character: ->'<- at offset: 30, skipped 1 characters.",
+          },
+        },
+        {
+          messageId: "wxmlError",
+          data: {
+            error: "Expecting token of type --> EOF <-- but found --> '</' <--",
           },
         },
       ],

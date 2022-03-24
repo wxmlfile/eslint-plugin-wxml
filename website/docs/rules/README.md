@@ -35,6 +35,7 @@ sidebarDepth: 0
 | [Deprecated] [wxml/no-wx-for-with-wx-if](./no-wx-for-with-wx-if.md) | ~~avoid [error](https://developers.weixin.qq.com/community/develop/doc/00082a556fcb0810a6b7e2eee5b800) when you use `wx:for` with `wx:if/wx:elif/wx:else` at same tag~~ | | |
 | [wxml/no-wx-if-string](./no-wx-if-string.md) | avoid unexpected result when you use invalid boolean interpolation as `wx:if/wx:elif`'s value | :star: :star: :star: | |
 | [wxml/quotes](./quotes.md) | force using same quotes style in project, `'` or `"` | :star: | |
+| [wxml/report-interpolation-error](./report-interpolation-error.md) | check `interpolation` syntax error via [`@wxml/parser`](https://github.com/wxmlfile/wxml-parser) | :star: :star: :star: | |
 | [wxml/report-wxml-syntax-error](./report-wxml-syntax-error.md) | check `wxml` syntax error via [`@wxml/parser`](https://github.com/wxmlfile/wxml-parser) | :star: | |
 | [wxml/report-wxs-syntax-error](./report-wxml-syntax-error.md) | check inline `wxs` syntax error via [`@wxml/parser`](https://github.com/wxmlfile/wxml-parser) | :star: | |
 | [wxml/required-attributes](./required-attributes.md) | using custom config to force team member write the required attributes in wxml | :star: :star: | |

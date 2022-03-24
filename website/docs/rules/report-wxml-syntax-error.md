@@ -9,7 +9,7 @@ title: wxml/report-wxml-syntax-error
 
 ::: tip wxml
 
-`eslint-plugin-wxml` using `@wxml/parser` ad parser to parse `wxml` source code, it provide `wxml` syntax error message. If you think this rules contain `bug`, please report it by [github issue](https://github.com/wxmlfile/eslint-plugin-wxml/issues).
+`eslint-plugin-wxml` using `@wxml/parser` as parser to parse `wxml` source code, it provide `wxml` syntax error message. If you think this rules contain `bug`, please report it by [github issue](https://github.com/wxmlfile/eslint-plugin-wxml/issues).
 
 :::
 
