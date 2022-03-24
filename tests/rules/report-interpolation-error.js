@@ -142,6 +142,6 @@ tester.run("report-interpolation-error", rule, {
           },
         },
       ],
-    }
+    },
   ],
 });
