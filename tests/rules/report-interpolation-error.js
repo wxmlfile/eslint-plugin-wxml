@@ -23,7 +23,7 @@ tester.run("report-interpolation-error", rule, {
           class="wrapper"
           style="{{ banner.bgColor ? ('background-color: ' + banner.bgColor) : ''}}"
         />
-      `
+      `,
     },
     {
       filename: "interpolation.wxml",
@@ -39,7 +39,7 @@ tester.run("report-interpolation-error", rule, {
           isUseGoTop="{{false}}"
           hasMore="{{tabList[selectTabIndex].hasMore}}"
         />
-      `
+      `,
     },
     {
       filename: "interpolation.wxml",
@@ -55,15 +55,15 @@ tester.run("report-interpolation-error", rule, {
     },
     {
       filename: "interpolation.wxml",
-      code: `<view>{{object.key}} {{array[0]}}</view>`
+      code: `<view>{{object.key}} {{array[0]}}</view>`,
     },
     {
       filename: "interpolation.wxml",
-      code: `<view wx:for="{{[zero, 1, 2, 3, 4]}}"> {{item}} </view>`
+      code: `<view wx:for="{{[zero, 1, 2, 3, 4]}}"> {{item}} </view>`,
     },
     {
       filename: "interpolation.wxml",
-      code: `<template is="objectCombine" data="{{...obj1, ...obj2, e: 5}}"></template>`
+      code: `<template is="objectCombine" data="{{...obj1, ...obj2, e: 5}}"></template>`,
     },
     {
       filename: "interpolation.wxml",
@@ -71,16 +71,16 @@ tester.run("report-interpolation-error", rule, {
         <template is="navMain"
           data="{{ searchShadeWords: Store.searchShadeWords, hasSearch, gotoOrderList}}"
         />
-      `
+      `,
     },
     {
       filename: "interpolation.wxml",
-      code: `<template is="objectCombine" data="{{foo, bar}}"></template>`
+      code: `<template is="objectCombine" data="{{foo, bar}}"></template>`,
     },
     {
       filename: "interpolation.wxml",
-      code: `ext_params_click="{{ { goods_id: log.goodsId, exps: log.stringifyExps } }}"`
-    }
+      code: `ext_params_click="{{ { goods_id: log.goodsId, exps: log.stringifyExps } }}"`,
+    },
   ],
   invalid: [
     {
@@ -130,6 +130,6 @@ tester.run("report-interpolation-error", rule, {
           },
         },
       ],
-    }
-  ]
+    },
+  ],
 });

@@ -66,8 +66,7 @@ tester.run("report-wxml-syntax-error", rule, {
         {
           messageId: "wxmlError",
           data: {
-            error:
-              "Expecting token of type --> EOF <-- but found --> '</' <--",
+            error: "Expecting token of type --> EOF <-- but found --> '</' <--",
           },
         },
       ],
@@ -86,10 +85,9 @@ tester.run("report-wxml-syntax-error", rule, {
         {
           messageId: "wxmlError",
           data: {
-            error:
-              "Expecting token of type --> EOF <-- but found --> '</' <--",
+            error: "Expecting token of type --> EOF <-- but found --> '</' <--",
           },
-        }
+        },
       ],
     },
     {
