@@ -16,8 +16,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v2
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
       with: {node-version: '${{ env.NODE_VERSION }}'}
     - run: npm install
     - run: npm run lint
@@ -28,10 +28,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v2
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
       with: {node-version: '${{ env.NODE_VERSION }}'}
     - run: npm install
+    - run: npm run lint
+    - run: npm run test
+
+  eslint8_test:
+    name: Test eslint-plugin-wxml with eslint8
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with: {node-version: '${{ env.NODE_VERSION }}'}
+    - run: npm install
+    - run: npm install eslint@8
     - run: npm run lint
     - run: npm run test
 
@@ -44,9 +57,9 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
      # Pull repo to test machine
-     - uses: actions/checkout@v2
+     - uses: actions/checkout@v3
      # Configures the node version used on GitHub-hosted runners
-     - uses: actions/setup-node@v2
+     - uses: actions/setup-node@v3
        with:
          # The Node.js version to configure
          node-version: ${{ matrix.node }}
@@ -55,7 +68,7 @@ jobs:
        id: npm-cache-dir
        run: |
           echo "::set-output name=dir::$(npm config get cache)"
-     - uses: actions/cache@v2
+     - uses: actions/cache@v3
        id: npm-cache # use this to check for `cache-hit` ==> if: steps.npm-cache.outputs.cache-hit != 'true'
        with:
          path: ${{ steps.npm-cache-dir.outputs.dir }}
