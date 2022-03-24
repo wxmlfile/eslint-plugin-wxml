@@ -131,5 +131,17 @@ tester.run("report-interpolation-error", rule, {
         },
       ],
     },
+    {
+      filename: "interpolation.wxml",
+      code: `<view style="idx-{{isOdd ? 'single' }}" />`,
+      errors: [
+        {
+          messageId: "interpolationError",
+          data: {
+            error: "Unexpected token",
+          },
+        },
+      ],
+    }
   ],
 });
