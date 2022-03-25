@@ -81,6 +81,30 @@ tester.run("report-interpolation-error", rule, {
       filename: "interpolation.wxml",
       code: `ext_params_click="{{ { goods_id: log.goodsId, exps: log.stringifyExps } }}"`,
     },
+    {
+      filename: "interpolation.wxml",
+      code: `<view data="{{ {...spreadData} }}">`
+    },
+    {
+      filename: "interpolation.wxml",
+      code: `<view data="{{ url, isTrue: x === y }}">`
+    },
+    {
+      filename: "interpolation.wxml",
+      code: `<view data="{{ url, isTrue: true }}">`
+    },
+    {
+      filename: "interpolation.wxml",
+      code: `<view data="{{ url, computed: calc(x, y) }}">`
+    },
+    {
+      filename: "interpolation.wxml",
+      code: `<view data="{{ ...spread, ...{ key: 'val' } }}">`
+    },
+    {
+      filename: "interpolation.wxml",
+      code: `<view data="{{ ...spread, ...{spread} }}">`
+    }
   ],
   invalid: [
     {
