@@ -26,7 +26,7 @@ tester.run("omit-bool-attributes", rule, {
     {
       filename: "test.wxml",
       code: `<view class="a-{{true}}" ></view>`,
-    }
+    },
   ],
   invalid: [
     {
@@ -36,7 +36,7 @@ tester.run("omit-bool-attributes", rule, {
         {
           messageId: "omitWarn",
           data: {
-            attrKey: "autoplay"
+            attrKey: "autoplay",
           },
         },
       ],
@@ -48,7 +48,7 @@ tester.run("omit-bool-attributes", rule, {
         {
           messageId: "omitWarn",
           data: {
-            attrKey: "autoplay"
+            attrKey: "autoplay",
           },
         },
       ],
@@ -60,10 +60,10 @@ tester.run("omit-bool-attributes", rule, {
         {
           messageId: "omitWarn",
           data: {
-            attrKey: "autoplay"
+            attrKey: "autoplay",
           },
         },
       ],
-    }
+    },
   ],
 });
