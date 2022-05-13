@@ -43,6 +43,18 @@ tester.run("omit-bool-attributes", rule, {
     },
     {
       filename: "test.wxml",
+      code: `<swiper autoplay='{{true}}' />`,
+      errors: [
+        {
+          messageId: "omitWarn",
+          data: {
+            attrKey: "autoplay",
+          },
+        },
+      ],
+    },
+    {
+      filename: "test.wxml",
       code: '<swiper autoplay=" {{true}} " />',
       errors: [
         {
