@@ -7,7 +7,7 @@ title: wxml/omit-bool-attributes
 
 ### Backgroud
 
-In [wxml](https://developers.weixin.qq.com/miniprogram/dev/framework/view/wxml/), when we use boolean attriute like  `< attr={{true}} />`, we can omit it and convert to `<a sttr />` just like [jsx](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-boolean-value.md).
+In [wxml](https://developers.weixin.qq.com/miniprogram/dev/framework/view/wxml/), when we use boolean attriute like  `<a attr={{true}} />`, we can omit it and convert to `<a sttr />` just like [jsx](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-boolean-value.md).
 
 ## Motivation
 
