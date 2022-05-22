@@ -26,6 +26,7 @@ sidebarDepth: 0
 | [wxml/no-dot-this-in-wx-key](./no-dot-this-in-wx-key.md) | disable using [`*this`](https://developers.weixin.qq.com/miniprogram/dev/reference/wxml/list.html) as `wx:key`'s value | :star: | |
 | [wxml/no-duplicate-attributes](./no-duplicate-attributes.md) | not allow exist duplicate attributes in a single tag | :star: :star: | |
 | [wxml/no-dynamic-wx-key](./no-dynamic-wx-key.md) | enforce using static `wx:key` | :star: | |
+| [wxml/no-inconsistent-tagname](./no-inconsistent-tagname.md) | Found startTag name and endTag name not equal at development stage | :star: :star: :star: | |
 | [wxml/no-index-in-wx-key](./no-index-in-wx-key.md) | disable using [`index`](https://developers.weixin.qq.com/miniprogram/dev/reference/wxml/list.html) as `wx:key`'s value | :star: | |
 | [wxml/no-inline-wxs](./no-inline-wxs.md) | force using separate `.wxs` file | :star: | |
 | [wxml/no-unexpected-string-bool](./no-unexpected-string-bool.md) | not allow using `"true"` or `"false"` as attribute's boolean value, [official documentation](https://developers.weixin.qq.com/miniprogram/dev/reference/wxml/data.html) | :star: :star: :star: | |
