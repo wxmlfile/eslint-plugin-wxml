@@ -28,17 +28,17 @@ tester.run("no-inconsistent-tagname", rule, {
     {
       filename: "test.wxml",
       code: `<view wx:for="{{titles}}" wx:key="index" ></viw>`,
-      errors: [`startTag's name <view /> and endTag's name </viw> not equal`],
+      errors: [`startTag's name 'view' and endTag's name 'viw' not equal`],
     },
     {
       filename: "test.wxml",
       code: `<view wx:for="{{titles}}" wx:key="index" ></>`,
-      errors: [`startTag's name <view /> and endTag's name </> not equal`],
+      errors: [`startTag's name 'view' and endTag's name '' not equal`],
     },
     {
       filename: "test.wxml",
       code: `<view wx:for="{{titles}}" wx:key="index" ></ >`,
-      errors: [`startTag's name <view /> and endTag's name </> not equal`],
+      errors: [`startTag's name 'view' and endTag's name '' not equal`],
     },
   ],
 });
