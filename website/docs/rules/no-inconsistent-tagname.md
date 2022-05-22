@@ -7,7 +7,7 @@ title: wxml/no-inconsistent-tagname
 
 ## Motivation
 
-Find startTag name and endTag name not equal at development stage. 
+Found startTag name and endTag name not equal at development stage. 
 
 <eslint-code-block :rules="{'wxml/no-inconsistent-tagname': ['error']}" >
 
