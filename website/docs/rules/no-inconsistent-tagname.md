@@ -19,7 +19,7 @@ Find startTag name and endTag name not equal at development stage.
 >
  {{item.name}}
 </view>
-<same-name>
+<same-tag-name>
     {{"tag name must be equal"}}
 </same-tag-name>
 
