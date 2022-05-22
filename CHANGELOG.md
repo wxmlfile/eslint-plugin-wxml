@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.7.2] - 2022-05-22
 ### Added
-- Add rule `no-unexpected-string-bool`
+- Add rule `no-inconsistent-tagname`
 
 ## [0.7.1] - 2022-05-13
 ### Added
