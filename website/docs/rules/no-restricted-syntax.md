@@ -51,7 +51,7 @@ The examples in this section were adapted from the [esquery](https://github.com/
 
 <!-- ✗ BAD -->
 
-<!-- disable WXAttribute[key=\'class\'][value=\'class\'] -->
+<!-- disable WXAttribute[key=class][value=class] -->
 <view class="class"></view>
 <!-- disable WXScript -->
 <wxs src="../../utils.wxs" />
