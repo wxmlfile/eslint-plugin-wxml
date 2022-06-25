@@ -10,7 +10,6 @@ sidebarDepth: 0
 </div>
 
 ![npm version](https://img.shields.io/npm/v/eslint-plugin-wxml)
-![cnpm version](https://cnpmjs.org/badge/v/eslint-plugin-wxml.svg)
 ![CI](https://github.com/wxmlfile/eslint-plugin-wxml/actions/workflows/ci.yml/badge.svg)
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)

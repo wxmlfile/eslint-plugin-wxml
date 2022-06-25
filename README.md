@@ -4,7 +4,6 @@
 </div>
 
 [![npm version](https://img.shields.io/npm/v/eslint-plugin-wxml)](https://www.npmjs.com/package/eslint-plugin-wxml)
-[![npmmirror version](https://npmmirror.com/badge/v/eslint-plugin-wxml.svg)](https://npmmirror.com/package/eslint-plugin-wxml)
 [![CI](https://github.com/wxmlfile/eslint-plugin-wxml/actions/workflows/ci.yml/badge.svg)](https://github.com/wxmlfile/eslint-plugin-wxml/actions/workflows/ci.yml)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/wxmlfile/eslint-plugin-wxml/pulls)
