@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.7.3] - 2022-07-14
+### Added
+- Add rule `forbid-attributes`
+
 ## [0.7.2] - 2022-05-22
 ### Added
 - Add rule `no-inconsistent-tagname`
