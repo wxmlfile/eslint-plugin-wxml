@@ -27,7 +27,7 @@ Forbid using some attributes. For example: jsx use `className` but wxml use `cla
 }
 ```
 
-<eslint-code-block :rules="{'wxml/forbid-attributes': ['error', { forbid: [ 'f**k', { attr: 'className', message: 'wxml use class not jsx className' } ] }]}" >
+<eslint-code-block :rules="{'wxml/forbid-attributes': ['error', { forbid: [ { attr: 'fuck', message: 'dont use dirty words ' }, { attr: 'className', message: 'wxml use class as class name not jsx className' } ] }]}" >
 
 ```wxml
 <!-- ✓ GOOD -->
@@ -35,7 +35,7 @@ Forbid using some attributes. For example: jsx use `className` but wxml use `cla
 
 <!-- ✗ BAD -->
 <text className="text-center" >{{name}}</div>
-<text f**k="text-center" >{{name}}</div>
+<text fuck="true" >{{name}}</div>
 ```
 
 </eslint-code-block>
