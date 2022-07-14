@@ -35,9 +35,7 @@ tester.run("forbid-attributes", rule, {
       code: "<div className='style' />",
       options: [
         {
-          forbid: [
-            { attr: "className", message: "please use class instead" }
-          ],
+          forbid: [{ attr: "className", message: "please use class instead" }],
         },
       ],
       errors: [
