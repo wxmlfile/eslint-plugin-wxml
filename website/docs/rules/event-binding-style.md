@@ -7,7 +7,7 @@ title: wxml/event-binding-style
 
 ## Motivation
 
-Force some style for event bidning.
+Force using same style for event binding.
 
 1. Force everryone use `colon` style event binding.
 
