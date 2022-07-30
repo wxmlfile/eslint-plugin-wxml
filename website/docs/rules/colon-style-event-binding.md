@@ -53,6 +53,12 @@ No special options, normal config is ok
 { "wxml/colon-style-event-binding": "error" }
 ```
 
+## History
+
+| Version | Changes
+|:---|:---|
+| v0.7.4 | Deprecated, use [wxml/event-binding-style](https://eslint-plugin-wxml.js.org/rules/event-binding-style.html) instead |
+
 ## Version
 
 This rule was introduced in eslint-plugin-wxml `v0.3.0`
