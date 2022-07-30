@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.7.4] - 2022-07-30
+### Added
+- Add rule `event-binding-style`
+### Changed
+- Deprecated rule `colon-style-event-binding`
+
 ## [0.7.3] - 2022-07-14
 ### Added
 - Add rule `forbid-attributes`
