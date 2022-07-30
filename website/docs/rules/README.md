@@ -20,7 +20,7 @@ sidebarDepth: 0
 | | | |
 | [Deprecated] [wxml/colon-style-event-binding](./colon-style-event-binding.md) | use colon(`:`) style event binding | :star: | |
 | [wxml/empty-tag-self-closing](./empty-tag-self-closing.md) | empty tag must be self closing | :star: :star: :star: | |
-| [wxml/event-binding-style](./event-binding-style.md) | empty tag must be self closing | :star: :star: :star: | |
+| [wxml/event-binding-style](./event-binding-style.md) | using same event binding style | :star: :star: :star: | |
 | [wxml/forbid-tags](./forbid-tags.md) | disable using special tag in projet | :star: :star: :star: | |
 | [wxml/max-depth](./max-depth.md) | set maximum wxml tree depth | :star: :star: | |
 | [wxml/max-len](./max-len.md) | set maximum length of single line code | :star: :star: | |
