@@ -18,8 +18,9 @@ sidebarDepth: 0
 |:--------|:------------|:---|:---|
 | [no-restricted-syntax](./no-restricted-syntax.md) | <a href="https://eslint.org/docs/latest/rules/no-restricted-syntax"><img src="https://funimg.pddpic.com/mobile_piggy/1c3dcd1f-0441-4343-97d6-0813d5d5bba9.png.slim.png" height="16px" /></a> disallow specified syntax | :star: :star: :star: | |
 | | | |
-| [wxml/colon-style-event-binding](./colon-style-event-binding.md) | use colon(`:`) style event binding | :star: :star: | |
+| [Deprecated] [wxml/colon-style-event-binding](./colon-style-event-binding.md) | use colon(`:`) style event binding | :star: | |
 | [wxml/empty-tag-self-closing](./empty-tag-self-closing.md) | empty tag must be self closing | :star: :star: :star: | |
+| [wxml/event-binding-style](./event-binding-style.md) | empty tag must be self closing | :star: :star: :star: | |
 | [wxml/forbid-tags](./forbid-tags.md) | disable using special tag in projet | :star: :star: :star: | |
 | [wxml/max-depth](./max-depth.md) | set maximum wxml tree depth | :star: :star: | |
 | [wxml/max-len](./max-len.md) | set maximum length of single line code | :star: :star: | |

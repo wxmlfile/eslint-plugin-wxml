@@ -64,7 +64,7 @@ You can edit code via online editor, it's online REPL, try to fix eslint problem
 You must set second params as one of ["`colon`", "`no-colon`"]
 
 ```json
-{ "wxml/colon-style-event-binding": ["error", "colon"]}
+{ "wxml/event-binding-style": ["error", "colon"]}
 ```
 
 ## Version
