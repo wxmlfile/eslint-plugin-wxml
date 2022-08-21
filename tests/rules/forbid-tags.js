@@ -19,6 +19,14 @@ tester.run("forbid-tags", rule, {
       code: "<Button />",
       options: [{ forbid: [{ tag: "button" }] }],
     },
+    {
+      code: "<view hover-class='button' />",
+      options: [{ forbid: [{ tag: "view", skipAttrs: ["hover-class"] }] }],
+    },
+    {
+      code: "<v class='button' />",
+      options: [{ forbid: [{ tag: "v", disableAttrs: ["hover-class"] }] }],
+    },
   ],
   invalid: [
     {
@@ -70,6 +78,37 @@ tester.run("forbid-tags", rule, {
           messageId: "forbiddenTag",
           data: { tag: "p" },
         },
+      ],
+    },
+    {
+      code: "<view main='button' />",
+      options: [
+        {
+          forbid: [
+            {
+              tag: "view",
+              message:
+                "<view> is forbidden, but if you want to set hover-class you must use <view />",
+              skipAttrs: ["hover-class", "hover-start-time"],
+            },
+          ],
+        },
+      ],
+      errors: [
+        `<view> is forbidden, but if you want to set hover-class you must use <view />`,
+      ],
+    },
+    {
+      code: "<v hover-class='button' />",
+      options: [
+        {
+          forbid: [
+            { tag: "v", disableAttrs: ["hover-class", "hover-start-time"] },
+          ],
+        },
+      ],
+      errors: [
+        `If you need to use the following attributes [hover-class, hover-start-time], you can't use <v />`,
       ],
     },
   ],

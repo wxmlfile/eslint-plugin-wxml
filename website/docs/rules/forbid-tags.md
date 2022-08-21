@@ -53,16 +53,86 @@ You may want to forbid usage of certain tags in favor of others, (e.g. forbid al
 
 </eslint-code-block>
 
+```js
+// following code use this config
+{
+  "wxml/forbid-tags": [
+    "error",
+    {
+      "forbid":
+      [
+        {
+          "tag": "view",
+          "message": "If you need use hover-class you should use <view /> otherwise use <v />",
+          "skipAttrs": ["hover-class"]
+        }
+      ]
+    }
+  ]
+}
+```
+
+<eslint-code-block :rules="{'wxml/forbid-tags': ['error', { forbid: [{ tag: 'view', message: 'If you need use hover-class you should use <view /> otherwise use <v />', skipAttrs: ['hover-class'] } ] }]}" >
+
+```wxml
+<!-- ✓ GOOD -->
+<view hover-class='button'>text</view>
+
+<!-- ✗ BAD -->
+<view class='button'>text</view>
+```
+
+</eslint-code-block>
+
+```js
+// following code use this config
+{
+  "wxml/forbid-tags": [
+    "error",
+    {
+      "forbid":
+      [
+        {
+          "tag": "v",
+          "message": "If you need use hover-class you should use <view /> otherwise use <v />",
+          "disableAttrs": ["hover-class"]
+        }
+      ]
+    }
+  ]
+}
+```
+
+<eslint-code-block :rules="{'wxml/forbid-tags': ['error', { forbid: [{ tag: 'v', message: 'If you need use hover-class you should use <view /> otherwise use <v />', disableAttrs: ['hover-class'] } ] }]}" >
+
+```wxml
+<!-- ✓ GOOD -->
+<v class='button' />
+<v class='button' />text</v>
+
+<!-- ✗ BAD -->
+<v hover-class='button' />
+<v hover-class='button'>text</v>
+```
+
+</eslint-code-block>
+
 ::: tip 💡 tips
 
 You can edit code via online editor, it's online REPL, try to fix eslint problem !
 
 :::
 
+## History
+
+| Version | Changes
+|:---|:---|
+| v0.7.5 | Add `disableAttrs` and `skipAttrs` config support |
+
 ## Config
 
 ```typescript
-"wxml/forbid-tags": [<enabled>, { "forbid": [<string|{ tag: string, message: string }>] }]
+"wxml/forbid-tags": [<enabled>, { "forbid": [<string|{ tag: string, message?: string, disableAttrs?: string[], skipAttrs?: string[] }>] }]
 ```
 
 ## Version
