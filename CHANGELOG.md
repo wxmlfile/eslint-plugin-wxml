@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.7.5] - 2022-08-21
+### Changed
+- Add `disableAttrs` and `skipAttrs` config support for rule `forbid-tags`
+
 ## [0.7.4] - 2022-07-30
 ### Added
 - Add rule `event-binding-style`
