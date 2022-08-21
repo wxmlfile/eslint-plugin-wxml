@@ -76,10 +76,10 @@ You may want to forbid usage of certain tags in favor of others, (e.g. forbid al
 
 ```wxml
 <!-- ✓ GOOD -->
-<view hover-class='button' />text</view>
+<view hover-class='button'>text</view>
 
 <!-- ✗ BAD -->
-<view class='button' />text</view>
+<view class='button'>text</view>
 ```
 
 </eslint-code-block>
@@ -107,10 +107,12 @@ You may want to forbid usage of certain tags in favor of others, (e.g. forbid al
 
 ```wxml
 <!-- ✓ GOOD -->
-<v class='button' />text</view>
+<v class='button' />
+<v class='button' />text</v>
 
 <!-- ✗ BAD -->
-<v hover-class='button' />text</view>
+<v hover-class='button' />
+<v hover-class='button'>text</v>
 ```
 
 </eslint-code-block>
