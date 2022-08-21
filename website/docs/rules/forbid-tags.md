@@ -103,7 +103,7 @@ You may want to forbid usage of certain tags in favor of others, (e.g. forbid al
 }
 ```
 
-<eslint-code-block :rules="{'wxml/forbid-tags': ['error', { forbid: [{ tag: 'view', message: 'If you need use hover-class you should use <view /> otherwise use <v />', disableAttrs: ['hover-class'] } ] }]}" >
+<eslint-code-block :rules="{'wxml/forbid-tags': ['error', { forbid: [{ tag: 'v', message: 'If you need use hover-class you should use <view /> otherwise use <v />', disableAttrs: ['hover-class'] } ] }]}" >
 
 ```wxml
 <!-- ✓ GOOD -->
