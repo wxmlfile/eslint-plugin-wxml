@@ -9,7 +9,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/wxmlfile/eslint-plugin-wxml/pulls)
 [![Twitter Follow Author](https://img.shields.io/twitter/follow/s_chenlei)](https://twitter.com/s_chenlei)
 
-### A [ESLint](https://eslint.org) plugin to lint [wxml](https://developers.weixin.qq.com/miniprogram/dev/reference/wxml) files.
+### An [ESLint](https://eslint.org) plugin to lint [wxml](https://developers.weixin.qq.com/miniprogram/dev/reference/wxml) files.
 
 ## Show Case
 
