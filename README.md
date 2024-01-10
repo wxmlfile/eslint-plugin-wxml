@@ -7,7 +7,7 @@
 [![CI](https://github.com/wxmlfile/eslint-plugin-wxml/actions/workflows/ci.yml/badge.svg)](https://github.com/wxmlfile/eslint-plugin-wxml/actions/workflows/ci.yml)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/wxmlfile/eslint-plugin-wxml/pulls)
-[![Twitter Follow Author](https://img.shields.io/twitter/follow/s_chenlei)](https://twitter.com/s_chenlei)
+[![Twitter Follow Author](https://img.shields.io/twitter/follow/s_chenlei)](https://twitter.com/chenleidev)
 
 ### An [ESLint](https://eslint.org) plugin to lint [wxml](https://developers.weixin.qq.com/miniprogram/dev/reference/wxml) files.
 
