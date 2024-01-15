@@ -12,7 +12,7 @@ on:
 
 jobs:
   windows_test:
-    name: 'Test eslint-plugin-wxml on windows with node${{ env.NODE_VERSION }}'
+    name: Test eslint-plugin-wxml on windows with node20
     runs-on: ubuntu-latest
 
     steps:
@@ -24,7 +24,7 @@ jobs:
     - run: npm run test
   
   macos_test:
-    name: 'Test eslint-plugin-wxml on macos with node${{ env.NODE_VERSION }}'
+    name: Test eslint-plugin-wxml on macos with node20
     runs-on: ubuntu-latest
 
     steps:
