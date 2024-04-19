@@ -1,11 +1,9 @@
 const fs = require("fs");
 const path = require("path");
-const RuleTester = require("eslint").RuleTester;
+const tester = require("../rule-tester-compat").RuleTester;
 const rule = require("../../lib/rules/max-lines");
 
-const tester = new RuleTester({
-  parser: require.resolve("@wxml/parser"),
-});
+
 
 function readFixureFiles(filename) {
   if (filename) {

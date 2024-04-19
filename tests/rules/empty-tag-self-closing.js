@@ -1,9 +1,7 @@
-const RuleTester = require("eslint").RuleTester;
+const tester = require("../rule-tester-compat").RuleTester;
 const rule = require("../../lib/rules/empty-tag-self-closing");
 
-const tester = new RuleTester({
-  parser: require.resolve("@wxml/parser"),
-});
+
 
 tester.run("empty-tag-self-closing", rule, {
   valid: [

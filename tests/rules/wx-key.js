@@ -1,9 +1,7 @@
-const RuleTester = require("eslint").RuleTester;
+const tester = require("../rule-tester-compat").RuleTester;
 const rule = require("../../lib/rules/wx-key");
 
-const tester = new RuleTester({
-  parser: require.resolve("@wxml/parser"),
-});
+
 
 tester.run("wx-key", rule, {
   valid: [

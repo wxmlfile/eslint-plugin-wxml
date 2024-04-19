@@ -1,9 +1,7 @@
-const RuleTester = require("eslint").RuleTester;
+const tester = require("../rule-tester-compat").RuleTester;
 const rule = require("../../lib/rules/omit-bool-attributes");
 
-const tester = new RuleTester({
-  parser: require.resolve("@wxml/parser"),
-});
+
 
 tester.run("omit-bool-attributes", rule, {
   valid: [
