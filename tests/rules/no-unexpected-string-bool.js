@@ -20,17 +20,41 @@ tester.run("no-unexpected-string-bool", rule, {
     {
       filename: "test.wxml",
       code: `<popup wx:if="true" />`,
-      errors: [{ messageId: "trueString" }],
+      errors: [
+        {
+          messageId: "trueString",
+          data: {
+            true: "{{true}}",
+            false: "{{false}}",
+          },
+        },
+      ],
     },
     {
       filename: "test.wxml",
       code: `<popup wx:if="false" />`,
-      errors: [{ messageId: "falseString" }],
+      errors: [
+        {
+          messageId: "falseString",
+          data: {
+            true: "{{true}}",
+            false: "{{false}}",
+          },
+        },
+      ],
     },
     {
       filename: "test.wxml",
       code: `<dialog showAnime="false" />`,
-      errors: [{ messageId: "falseString" }],
+      errors: [
+        {
+          messageId: "falseString",
+          data: {
+            true: "{{true}}",
+            false: "{{false}}",
+          },
+        },
+      ],
     },
   ],
 });

@@ -33,6 +33,8 @@ tester.run("omit-bool-attributes", rule, {
           messageId: "omitWarn",
           data: {
             attrKey: "autoplay",
+            true: "{{true}}",
+            false: "{{false}}",
           },
         },
       ],
@@ -45,6 +47,8 @@ tester.run("omit-bool-attributes", rule, {
           messageId: "omitWarn",
           data: {
             attrKey: "autoplay",
+            true: "{{true}}",
+            false: "{{false}}",
           },
         },
       ],
@@ -57,6 +61,8 @@ tester.run("omit-bool-attributes", rule, {
           messageId: "omitWarn",
           data: {
             attrKey: "autoplay",
+            true: "{{true}}",
+            false: "{{false}}",
           },
         },
       ],
@@ -69,6 +75,8 @@ tester.run("omit-bool-attributes", rule, {
           messageId: "omitWarn",
           data: {
             attrKey: "autoplay",
+            true: "{{true}}",
+            false: "{{false}}",
           },
         },
       ],
