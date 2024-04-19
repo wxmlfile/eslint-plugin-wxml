@@ -1,8 +1,6 @@
 const tester = require("../rule-tester-compat").RuleTester;
 const rule = require("../../lib/rules/no-index-in-wx-key");
 
-
-
 tester.run("no-index-in-wx-key", rule, {
   valid: [
     {

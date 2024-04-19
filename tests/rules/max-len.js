@@ -1,8 +1,6 @@
 const tester = require("../rule-tester-compat").RuleTester;
 const rule = require("../../lib/rules/max-len");
 
-
-
 tester.run("max-len", rule, {
   valid: [
     {

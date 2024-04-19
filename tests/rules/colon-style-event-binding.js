@@ -1,8 +1,6 @@
 const tester = require("../rule-tester-compat").RuleTester;
 const rule = require("../../lib/rules/colon-style-event-binding");
 
-
-
 tester.run("colon-style-event-binding", rule, {
   valid: [
     {

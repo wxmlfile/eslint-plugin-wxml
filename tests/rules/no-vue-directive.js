@@ -1,8 +1,6 @@
 const tester = require("../rule-tester-compat").RuleTester;
 const rule = require("../../lib/rules/no-vue-directive");
 
-
-
 tester.run("no-vue-directive", rule, {
   valid: [
     {

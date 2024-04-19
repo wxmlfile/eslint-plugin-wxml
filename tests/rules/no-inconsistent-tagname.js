@@ -1,8 +1,6 @@
 const tester = require("../rule-tester-compat").RuleTester;
 const rule = require("../../lib/rules/no-inconsistent-tagname");
 
-
-
 tester.run("no-inconsistent-tagname", rule, {
   valid: [
     {

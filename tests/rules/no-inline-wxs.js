@@ -1,8 +1,6 @@
 const tester = require("../rule-tester-compat").RuleTester;
 const rule = require("../../lib/rules/no-inline-wxs");
 
-
-
 tester.run("no-inline-wxs", rule, {
   valid: [
     {

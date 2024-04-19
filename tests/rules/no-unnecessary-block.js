@@ -1,8 +1,6 @@
 const tester = require("../rule-tester-compat").RuleTester;
 const rule = require("../../lib/rules/no-unnecessary-block");
 
-
-
 tester.run("no-unnecessary-block", rule, {
   valid: [
     {

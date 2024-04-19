@@ -1,8 +1,6 @@
 const tester = require("../rule-tester-compat").RuleTester;
 const rule = require("../../lib/rules/no-wx-for-with-wx-if");
 
-
-
 tester.run("no-wx-for-with-wx-if", rule, {
   valid: [
     {

@@ -1,8 +1,6 @@
 const tester = require("../rule-tester-compat").RuleTester;
 const rule = require("../../lib/rules/no-unexpected-string-bool");
 
-
-
 tester.run("no-unexpected-string-bool", rule, {
   valid: [
     {

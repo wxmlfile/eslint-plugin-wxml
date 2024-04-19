@@ -1,8 +1,6 @@
 const tester = require("../rule-tester-compat").RuleTester;
 const rule = require("../../lib/rules/max-depth");
 
-
-
 tester.run("max-depth", rule, {
   valid: [
     {

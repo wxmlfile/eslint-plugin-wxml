@@ -1,8 +1,6 @@
 const tester = require("../rule-tester-compat").RuleTester;
 const rule = require("../../lib/rules/report-wxml-syntax-error");
 
-
-
 tester.run("report-wxml-syntax-error", rule, {
   valid: [
     {

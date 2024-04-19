@@ -1,8 +1,6 @@
 const tester = require("../rule-tester-compat").RuleTester;
 const rule = require("../../lib/rules/quotes");
 
-
-
 tester.run("quotes", rule, {
   valid: [
     {

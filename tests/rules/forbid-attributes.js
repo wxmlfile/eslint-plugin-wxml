@@ -1,8 +1,6 @@
 const tester = require("../rule-tester-compat").RuleTester;
 const rule = require("../../lib/rules/forbid-attributes");
 
-
-
 tester.run("forbid-attributes", rule, {
   valid: [
     {

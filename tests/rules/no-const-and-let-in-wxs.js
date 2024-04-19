@@ -1,8 +1,6 @@
 const tester = require("../rule-tester-compat").RuleTester;
 const rule = require("../../lib/rules/no-const-and-let-in-wxs");
 
-
-
 tester.run("no-const-and-let-in-wxs", rule, {
   valid: [
     {

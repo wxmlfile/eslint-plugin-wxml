@@ -1,8 +1,6 @@
 const tester = require("../rule-tester-compat").RuleTester;
 const rule = require("../../lib/rules/no-duplicate-attributes");
 
-
-
 tester.run("no-duplicate-attributes", rule, {
   valid: [
     {

@@ -1,8 +1,6 @@
 const tester = require("../rule-tester-compat").RuleTester;
 const rule = require("../../lib/rules/empty-tag-self-closing");
 
-
-
 tester.run("empty-tag-self-closing", rule, {
   valid: [
     {

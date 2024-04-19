@@ -1,8 +1,6 @@
 const tester = require("../rule-tester-compat").RuleTester;
 const rule = require("../../lib/rules/event-binding-style");
 
-
-
 tester.run("event-binding-style", rule, {
   valid: [
     {

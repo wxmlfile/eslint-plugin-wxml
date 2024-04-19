@@ -1,8 +1,6 @@
 const tester = require("../rule-tester-compat").RuleTester;
 const rule = require("../../lib/rules/forbid-tags");
 
-
-
 tester.run("forbid-tags", rule, {
   valid: [
     {

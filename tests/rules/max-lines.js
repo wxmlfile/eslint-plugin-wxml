@@ -3,8 +3,6 @@ const path = require("path");
 const tester = require("../rule-tester-compat").RuleTester;
 const rule = require("../../lib/rules/max-lines");
 
-
-
 function readFixureFiles(filename) {
   if (filename) {
     return fs.readFileSync(

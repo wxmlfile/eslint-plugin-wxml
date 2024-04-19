@@ -1,8 +1,6 @@
 const tester = require("../rule-tester-compat").RuleTester;
 const rule = require("../../lib/rules/no-dot-this-in-wx-key");
 
-
-
 tester.run("no-dot-this-in-wx-key", rule, {
   valid: [
     {

@@ -1,8 +1,6 @@
 const tester = require("../rule-tester-compat").RuleTester;
 const rule = require("../../lib/rules/report-interpolation-error");
 
-
-
 tester.run("report-interpolation-error", rule, {
   valid: [
     {

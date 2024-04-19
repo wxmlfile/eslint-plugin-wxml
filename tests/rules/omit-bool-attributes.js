@@ -1,8 +1,6 @@
 const tester = require("../rule-tester-compat").RuleTester;
 const rule = require("../../lib/rules/omit-bool-attributes");
 
-
-
 tester.run("omit-bool-attributes", rule, {
   valid: [
     {

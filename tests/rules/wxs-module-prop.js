@@ -1,8 +1,6 @@
 const tester = require("../rule-tester-compat").RuleTester;
 const rule = require("../../lib/rules/wxs-module-prop");
 
-
-
 tester.run("wxs-module-prop", rule, {
   valid: [
     {

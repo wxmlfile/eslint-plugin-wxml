@@ -1,8 +1,6 @@
 const tester = require("../rule-tester-compat").RuleTester;
 const rule = require("../../lib/rules/required-tags");
 
-
-
 tester.run("required-tags", rule, {
   valid: [
     {

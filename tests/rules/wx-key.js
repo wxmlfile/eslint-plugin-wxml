@@ -1,8 +1,6 @@
 const tester = require("../rule-tester-compat").RuleTester;
 const rule = require("../../lib/rules/wx-key");
 
-
-
 tester.run("wx-key", rule, {
   valid: [
     {

@@ -1,8 +1,6 @@
 const tester = require("../rule-tester-compat").RuleTester;
 const rule = require("../../lib/rules/no-dynamic-wx-key");
 
-
-
 tester.run("no-dynamic-wx-key", rule, {
   valid: [
     {
