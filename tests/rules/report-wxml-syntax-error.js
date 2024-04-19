@@ -1,9 +1,5 @@
-const RuleTester = require("eslint").RuleTester;
+const tester = require("../rule-tester-compat").RuleTester;
 const rule = require("../../lib/rules/report-wxml-syntax-error");
-
-const tester = new RuleTester({
-  parser: require.resolve("@wxml/parser"),
-});
 
 tester.run("report-wxml-syntax-error", rule, {
   valid: [

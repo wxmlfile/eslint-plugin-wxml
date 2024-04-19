@@ -1,9 +1,5 @@
-const RuleTester = require("eslint").RuleTester;
+const tester = require("../rule-tester-compat").RuleTester;
 const rule = require("../../lib/rules/no-unexpected-string-bool");
-
-const tester = new RuleTester({
-  parser: require.resolve("@wxml/parser"),
-});
 
 tester.run("no-unexpected-string-bool", rule, {
   valid: [
@@ -24,17 +20,41 @@ tester.run("no-unexpected-string-bool", rule, {
     {
       filename: "test.wxml",
       code: `<popup wx:if="true" />`,
-      errors: [{ messageId: "trueString" }],
+      errors: [
+        {
+          messageId: "trueString",
+          data: {
+            true: "{{true}}",
+            false: "{{false}}",
+          },
+        },
+      ],
     },
     {
       filename: "test.wxml",
       code: `<popup wx:if="false" />`,
-      errors: [{ messageId: "falseString" }],
+      errors: [
+        {
+          messageId: "falseString",
+          data: {
+            true: "{{true}}",
+            false: "{{false}}",
+          },
+        },
+      ],
     },
     {
       filename: "test.wxml",
       code: `<dialog showAnime="false" />`,
-      errors: [{ messageId: "falseString" }],
+      errors: [
+        {
+          messageId: "falseString",
+          data: {
+            true: "{{true}}",
+            false: "{{false}}",
+          },
+        },
+      ],
     },
   ],
 });

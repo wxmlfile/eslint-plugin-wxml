@@ -1,9 +1,5 @@
-const RuleTester = require("eslint").RuleTester;
+const tester = require("../rule-tester-compat").RuleTester;
 const rule = require("../../lib/rules/no-vue-directive");
-
-const tester = new RuleTester({
-  parser: require.resolve("@wxml/parser"),
-});
 
 tester.run("no-vue-directive", rule, {
   valid: [

@@ -1,9 +1,5 @@
-const RuleTester = require("eslint").RuleTester;
+const tester = require("../rule-tester-compat").RuleTester;
 const rule = require("../../lib/rules/required-tags");
-
-const tester = new RuleTester({
-  parser: require.resolve("@wxml/parser"),
-});
 
 tester.run("required-tags", rule, {
   valid: [

@@ -1,9 +1,5 @@
-const RuleTester = require("eslint").RuleTester;
+const tester = require("../rule-tester-compat").RuleTester;
 const rule = require("../../lib/rules/no-dot-this-in-wx-key");
-
-const tester = new RuleTester({
-  parser: require.resolve("@wxml/parser"),
-});
 
 tester.run("no-dot-this-in-wx-key", rule, {
   valid: [
