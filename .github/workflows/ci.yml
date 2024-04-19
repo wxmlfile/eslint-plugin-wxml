@@ -45,6 +45,7 @@ jobs:
       with: {node-version: '${{ env.NODE_VERSION }}'}
     - run: npm install
     - run: npm install eslint@9
+    - run: npm install semver
     - run: npm run lint
     - run: npm run test
 
@@ -58,6 +59,7 @@ jobs:
       with: {node-version: '${{ env.NODE_VERSION }}'}
     - run: npm install
     - run: npm install eslint@8
+    - run: npm install semver
     - run: npm run lint
     - run: npm run test
 
