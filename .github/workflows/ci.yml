@@ -35,6 +35,19 @@ jobs:
     - run: npm run lint
     - run: npm run test
 
+  eslint9_test:
+    name: Test eslint-plugin-wxml with eslint9
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with: {node-version: '${{ env.NODE_VERSION }}'}
+    - run: npm install
+    - run: npm install eslint@9
+    - run: npm run lint
+    - run: npm run test
+
   eslint8_test:
     name: Test eslint-plugin-wxml with eslint8
     runs-on: ubuntu-latest
