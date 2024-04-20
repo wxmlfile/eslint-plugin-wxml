@@ -5,9 +5,9 @@
 <view capture-catch:tap="clickhandler" />
 <view capture-bind:tap="clickhandler" />
 
-<!-- ✗ BAD
+<!-- ✗ BAD -->
 <view bindtap="clickhandler" />
 <view mut-bindtap="clickhandler" />
 <view catchtap="clickhandler" />
 <view capture-catchtap="clickhandler" />
-<view capture-bindtap="clickhandler" /> -->
+<view capture-bindtap="clickhandler" />
