@@ -73,9 +73,10 @@ jobs:
       with: {node-version: '${{ env.NODE_VERSION }}'}
     - name: Set working directory
       working-directory: tests/flatconfig
-    - run: pwd
-    - run: npm install
-    - run: npm run test
+      run: |
+        pwd
+        npm install
+        npm run test
 
   node_tests:
     name: 'Test on ${{matrix.os}} with node${{matrix.node}}'
