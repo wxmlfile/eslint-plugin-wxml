@@ -75,7 +75,7 @@ jobs:
       working-directory: tests/flatconfig
       run: |
         pwd
-        npm install --force
+        npm install
         npm list --depth=0
         npm run test
 
