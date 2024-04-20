@@ -35,7 +35,35 @@ pnpm add -D eslint eslint-plugin-wxml
 
 ## :book: Usage
 
-### Configuration
+### Configuration (`eslint.config.js`)
+
+Use `eslint.config.js` file to configure rules. This is the default in ESLint v9, but can be used starting from ESLint v8.57.0. See also: <https://eslint.org/docs/latest/use/configure/configuration-files-new>.
+
+Example **eslint.config.js**:
+
+```js
+import wxml from "eslint-plugin-wxml";
+import wxmlParser from "@wxml/parser";
+
+export default [
+  {
+    files: ["**/*.wxml"],
+    plugins: {
+      wxml: wxml,
+    },
+    languageOptions: {
+      parser: wxmlParser,
+    },
+    rules: {
+      "wxml/colon-style-event-binding": "error",
+    },
+  },
+];
+```
+
+See [the rule list](../rules/README.md) to get the `extends` &amp; `rules` that this plugin provides.
+
+### Configuration (`.eslintrc`)
 
 Use `.eslintrc.*` file to configure rules. See also: [https://eslint.org/docs/user-guide/configuring](https://eslint.org/docs/user-guide/configuring).
 

@@ -1,0 +1,18 @@
+{
+  "name": "flat-config-compat",
+  "version": "1.0.0",
+  "description": "tests for eslint's flat config",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint ."
+  },
+  "keywords": [
+    "wxml"
+  ],
+  "author": "chenleicoder@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^9.0.0",
+    "eslint-plugin-wxml": "^0.7.5"
+  }
+}
