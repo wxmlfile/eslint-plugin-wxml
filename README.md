@@ -33,9 +33,36 @@ $ yarn add eslint-plugin-wxml -D
 
 ## Basic Usage
 
-### change your eslintrc config
+### Configuration (`eslint.config.mjs`)
 
-> .eslintrc .eslintrc.yml .eslinrc.json .eslintrc.js
+Use `eslint.config.mjs` file to configure rules. This is the default in ESLint v9, but can be used starting from ESLint v8.57.0. See also: <https://eslint.org/docs/latest/use/configure/configuration-files-new>.
+
+Example **eslint.config.mjs**:
+
+```js
+import wxml from "eslint-plugin-wxml";
+import wxmlParser from "@wxml/parser";
+
+export default [
+  {
+    files: ["**/*.wxml"],
+    plugins: {
+      wxml: wxml,
+    },
+    languageOptions: {
+      parser: wxmlParser,
+    },
+    rules: {
+      "wxml/report-wxml-syntax-error": "error",
+    },
+  },
+];
+```
+
+### Configuration (`.eslintrc`)
+
+Use `.eslintrc.*` file to configure rules. See also: [https://eslint.org/docs/v8.x/use/configure/configuration-files](https://eslint.org/docs/v8.x/use/configure/configuration-files).
+
 
 ```diff
 +  "overrides": [

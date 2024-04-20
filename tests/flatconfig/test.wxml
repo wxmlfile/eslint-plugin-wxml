@@ -1,0 +1,13 @@
+<!-- ✓ GOOD -->
+<view bind:tap="clickhandler" />
+<view mut-bind:tap="clickhandler" />
+<view catch:tap="clickhandler" />
+<view capture-catch:tap="clickhandler" />
+<view capture-bind:tap="clickhandler" />
+
+<!-- ✗ BAD -->
+<view bindtap="clickhandler" />
+<view mut-bindtap="clickhandler" />
+<view catchtap="clickhandler" />
+<view capture-catchtap="clickhandler" />
+<view capture-bindtap="clickhandler" />
