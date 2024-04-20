@@ -76,6 +76,7 @@ jobs:
       run: |
         pwd
         npm install --force
+        npm list --depth=0
         npm run test
 
   node_tests:
