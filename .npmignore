@@ -12,6 +12,7 @@ tests
 .editorconfig
 .eslintignore
 .eslintrc.js
+eslint.config.mjs
 .gitignore
 package-lock.json
 CODE_OF_CONDUCT.md
