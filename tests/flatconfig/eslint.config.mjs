@@ -11,7 +11,7 @@ export default [
       parser: wxmlParser,
     },
     rules: {
-      "wxml/colon-style-event-binding": "error",
+      "wxml/colon-style-event-binding": "warn",
     },
   },
 ];
