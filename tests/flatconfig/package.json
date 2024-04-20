@@ -13,6 +13,6 @@
   "license": "MIT",
   "dependencies": {
     "eslint": "^9.0.0",
-    "eslint-plugin-wxml": "^0.7.5"
+    "eslint-plugin-wxml": "^0.8.0"
   }
 }

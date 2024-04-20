@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.8.0] - 2024-04-20
+### Added
+- Support [flat config](https://eslint.org/docs/latest/use/configure/migration-guide)
+
 ## [0.7.5] - 2022-08-21
 ### Changed
 - Add `disableAttrs` and `skipAttrs` config support for rule `forbid-tags`
