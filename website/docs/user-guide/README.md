@@ -35,11 +35,11 @@ pnpm add -D eslint eslint-plugin-wxml
 
 ## :book: Usage
 
-### Configuration (`eslint.config.js`)
+### Configuration (`eslint.config.mjs`)
 
-Use `eslint.config.js` file to configure rules. This is the default in ESLint v9, but can be used starting from ESLint v8.57.0. See also: <https://eslint.org/docs/latest/use/configure/configuration-files-new>.
+Use `eslint.config.mjs` file to configure rules. This is the default in ESLint v9, but can be used starting from ESLint v8.57.0. See also: <https://eslint.org/docs/latest/use/configure/configuration-files-new>.
 
-Example **eslint.config.js**:
+Example **eslint.config.mjs**:
 
 ```js
 import wxml from "eslint-plugin-wxml";
