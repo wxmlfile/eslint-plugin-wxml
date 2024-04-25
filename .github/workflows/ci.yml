@@ -84,7 +84,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [12, 14, 16, 18, 21]
+        node: [12, 14, 16, 18, 22]
     runs-on: ${{ matrix.os }}
     steps:
      # Pull repo to test machine
