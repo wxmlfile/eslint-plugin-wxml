@@ -1,7 +1,7 @@
 # Github actions workflow name
 name: CI
 
-env: {NODE_VERSION: 20}
+env: {NODE_VERSION: 22}
 
 # Triggers the workflow on push or pull request events
 on:
@@ -84,7 +84,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [12, 14, 16, 18, 22]
+        node: [12, 14, 16, 18, 20]
     runs-on: ${{ matrix.os }}
     steps:
      # Pull repo to test machine
