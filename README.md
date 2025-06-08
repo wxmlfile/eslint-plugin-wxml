@@ -8,6 +8,7 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Twitter Follow Author](https://img.shields.io/twitter/follow/s_chenlei)](https://twitter.com/chenleidev)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/wxmlfile/eslint-plugin-wxml/pulls)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6868e4d7-af62-4327-bba6-cb090f94d26a/deploy-status)](https://app.netlify.com/projects/eslint-plugin-wxml/deploys)
 
 ### An [ESLint](https://eslint.org) plugin to lint [wxml](https://developers.weixin.qq.com/miniprogram/dev/reference/wxml) files.
 
